@@ -4,7 +4,9 @@ services:
   client:
     command: npm run dev
     environment:
+      HOST: 0.0.0.0
       NODE_ENV: development
+      PORT: 8080
     image: node:12-alpine
     ports:
       - 8080:8080
